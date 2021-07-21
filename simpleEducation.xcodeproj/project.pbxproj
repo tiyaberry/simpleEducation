@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		A8AC7ED626A73F11008C2F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7ED526A73F11008C2F88 /* AppDelegate.swift */; };
 		A8AC7ED826A73F11008C2F88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7ED726A73F11008C2F88 /* SceneDelegate.swift */; };
-		A8AC7EDA26A73F11008C2F88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7ED926A73F11008C2F88 /* ViewController.swift */; };
 		A8AC7EDD26A73F11008C2F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC7EDB26A73F11008C2F88 /* Main.storyboard */; };
 		A8AC7EE026A73F11008C2F88 /* simpleEducation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7EDE26A73F11008C2F88 /* simpleEducation.xcdatamodeld */; };
 		A8AC7EE226A73F12008C2F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AC7EE126A73F12008C2F88 /* Assets.xcassets */; };
 		A8AC7EE526A73F12008C2F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AC7EE326A73F12008C2F88 /* LaunchScreen.storyboard */; };
 		A8AC7EF026A73F12008C2F88 /* simpleEducationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7EEF26A73F12008C2F88 /* simpleEducationTests.swift */; };
 		A8AC7EFB26A73F12008C2F88 /* simpleEducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7EFA26A73F12008C2F88 /* simpleEducationUITests.swift */; };
+		A8AC7F0926A74B31008C2F88 /* UITabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7F0826A74B30008C2F88 /* UITabController.swift */; };
+		A8AC7F0B26A8A166008C2F88 /* ClimateChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7F0A26A8A166008C2F88 /* ClimateChangeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		A8AC7ED226A73F11008C2F88 /* simpleEducation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleEducation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AC7ED526A73F11008C2F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8AC7ED726A73F11008C2F88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8AC7ED926A73F11008C2F88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8AC7EDC26A73F11008C2F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8AC7EDF26A73F11008C2F88 /* simpleEducation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = simpleEducation.xcdatamodel; sourceTree = "<group>"; };
 		A8AC7EE126A73F12008C2F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		A8AC7EF626A73F12008C2F88 /* simpleEducationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleEducationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8AC7EFA26A73F12008C2F88 /* simpleEducationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleEducationUITests.swift; sourceTree = "<group>"; };
 		A8AC7EFC26A73F12008C2F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8AC7F0826A74B30008C2F88 /* UITabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabController.swift; sourceTree = "<group>"; };
+		A8AC7F0A26A8A166008C2F88 /* ClimateChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateChangeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +105,13 @@
 			children = (
 				A8AC7ED526A73F11008C2F88 /* AppDelegate.swift */,
 				A8AC7ED726A73F11008C2F88 /* SceneDelegate.swift */,
-				A8AC7ED926A73F11008C2F88 /* ViewController.swift */,
+				A8AC7F0826A74B30008C2F88 /* UITabController.swift */,
 				A8AC7EDB26A73F11008C2F88 /* Main.storyboard */,
 				A8AC7EE126A73F12008C2F88 /* Assets.xcassets */,
 				A8AC7EE326A73F12008C2F88 /* LaunchScreen.storyboard */,
 				A8AC7EE626A73F12008C2F88 /* Info.plist */,
 				A8AC7EDE26A73F11008C2F88 /* simpleEducation.xcdatamodeld */,
+				A8AC7F0A26A8A166008C2F88 /* ClimateChangeVC.swift */,
 			);
 			path = simpleEducation;
 			sourceTree = "<group>";
@@ -261,10 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8AC7EDA26A73F11008C2F88 /* ViewController.swift in Sources */,
 				A8AC7ED626A73F11008C2F88 /* AppDelegate.swift in Sources */,
+				A8AC7F0926A74B31008C2F88 /* UITabController.swift in Sources */,
 				A8AC7EE026A73F11008C2F88 /* simpleEducation.xcdatamodeld in Sources */,
 				A8AC7ED826A73F11008C2F88 /* SceneDelegate.swift in Sources */,
+				A8AC7F0B26A8A166008C2F88 /* ClimateChangeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
