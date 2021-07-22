@@ -9,18 +9,27 @@ import UIKit
 
 class ClimateChangeVC: UIViewController {
 
+    
+    @IBOutlet weak var climateOne: UIImageView!
+    
+    @IBOutlet weak var climateTwo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after
         //loading the view.
+        climateOne.layer.cornerRadius = 75.0
+        climateOne.layer.masksToBounds = true
         
+        climateTwo.layer.cornerRadius = 50.0
+        climateTwo.layer.masksToBounds = true
         
     }
     
     @IBAction func link(_ sender: Any) {
         
-        if let url = URL(string: "https://www.apple.com") {
+        if let url = URL(string: "https://climate.nasa.gov/evidence/") {
              UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     

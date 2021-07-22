@@ -11,47 +11,19 @@
         <!--Information-->
         <scene sceneID="4c0-Hn-RTM">
             <objects>
-                <viewController id="zPX-D0-RPg" sceneMemberID="viewController">
+                <viewController id="zPX-D0-RPg" customClass="MainViewController" customModule="simpleEducation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFC-iX-UfX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="climate change" translatesAutoresizingMaskIntoConstraints="NO" id="D1O-EF-N3E">
                                 <rect key="frame" x="87" y="268" width="240" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wildfires" translatesAutoresizingMaskIntoConstraints="NO" id="0YT-Yo-fC8">
-                                <rect key="frame" x="87" y="441" width="240" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="deforestation" translatesAutoresizingMaskIntoConstraints="NO" id="yF6-h8-c3i">
-                                <rect key="frame" x="87" y="105" width="240" height="128"/>
+                                <rect key="frame" x="76" y="98" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFn-1h-Ca9">
-                                <rect key="frame" x="97" y="426" width="221" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <state key="normal" title="Wildfires">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="bac-Dh-fbM" kind="show" id="vg1-4g-HUG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk5-yI-W5X">
-                                <rect key="frame" x="95" y="119" width="221" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <state key="normal" title="Deforestation">
-                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Q71-ln-YJn" kind="show" id="sd1-AK-J1f"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZA-G5-hjK">
                                 <rect key="frame" x="95" y="279" width="221" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -94,12 +66,46 @@
                                     <segue destination="dD3-8f-jb2" kind="show" id="zip-J4-vP2"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wildfires" translatesAutoresizingMaskIntoConstraints="NO" id="oWD-4J-4CE">
+                                <rect key="frame" x="85" y="440" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hk5-yI-W5X">
+                                <rect key="frame" x="86" y="98" width="221" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Deforestation">
+                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Q71-ln-YJn" kind="show" id="sd1-AK-J1f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRv-Qk-K5g">
+                                <rect key="frame" x="97" y="440" width="221" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Wildfires">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bac-Dh-fbM" kind="show" id="Z6j-jM-glp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NlZ-6w-js1"/>
                         <color key="backgroundColor" red="0.75686274509999996" green="0.63137254899999995" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Information" image="book" catalog="system" selectedImage="book" id="r1O-5W-3Rf"/>
                     <navigationItem key="navigationItem" id="l2W-HC-dAm"/>
+                    <connections>
+                        <outlet property="climate" destination="D1O-EF-N3E" id="oYH-uj-OG9"/>
+                        <outlet property="deforestation" destination="yF6-h8-c3i" id="gHR-3e-iWZ"/>
+                        <outlet property="pollution" destination="3H0-L5-2Ij" id="l1N-Iv-je9"/>
+                        <outlet property="wildfires" destination="oWD-4J-4CE" id="ElV-wW-Xkd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rbs-mi-GjQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,26 +119,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SS0-Zr-KNV">
-                                <rect key="frame" x="87" y="136" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hex-jl-wNo">
-                                <rect key="frame" x="87" y="493" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="climatechange3" translatesAutoresizingMaskIntoConstraints="NO" id="Hex-jl-wNo">
+                                <rect key="frame" x="75" y="478" width="265" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC2-J7-C8o">
-                                <rect key="frame" x="37" y="680" width="357" height="128"/>
+                                <rect key="frame" x="37" y="680" width="357" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Why? Human activities, mainly the burning of fossil fuels like coal and oil has increased CO2 concentration in our atmosphere.                                                                                   </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhp-Qi-G9Z">
-                                <rect key="frame" x="37" y="322" width="357" height="128"/>
+                                <rect key="frame" x="37" y="322" width="357" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Climate change has multiple pieces of evidence to prove its occurence, such as: the rise of global temperature, warming oceans, shrinking ice sheets, sea level rise, and ocean acidification. </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -154,26 +158,34 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LI1-Cx-6eN">
                                 <rect key="frame" x="87" y="92" width="235" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <state key="normal" title="Click here for more information"/>
                                 <connections>
                                     <action selector="link:" destination="qr6-Uq-vsp" eventType="touchUpInside" id="pWt-DX-hEE"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="climatechange2" translatesAutoresizingMaskIntoConstraints="NO" id="SS0-Zr-KNV">
+                                <rect key="frame" x="57" y="130" width="300" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TKo-GI-EtU"/>
                         <color key="backgroundColor" red="0.80392156862745101" green="0.85490196078431369" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="FPA-6f-q4e"/>
+                    <connections>
+                        <outlet property="climateOne" destination="SS0-Zr-KNV" id="qcE-wM-dvQ"/>
+                        <outlet property="climateTwo" destination="Hex-jl-wNo" id="U98-G8-MkM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLX-mw-URQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2171.0144927536235" y="-109.15178571428571"/>
         </scene>
-        <!--View Controller-->
+        <!--DeforestationVC-->
         <scene sceneID="T9l-Wd-q1t">
             <objects>
-                <viewController id="Q71-ln-YJn" sceneMemberID="viewController">
+                <viewController id="Q71-ln-YJn" customClass="DeforestationVC" customModule="simpleEducation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SH5-p8-tLZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,26 +230,54 @@
                                 <rect key="frame" x="57" y="100" width="301" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqI-PA-zcX">
+                                <rect key="frame" x="90" y="62" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Click here for more information">
+                                    <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="link:" destination="qr6-Uq-vsp" eventType="touchUpInside" id="H6r-Rr-tlB"/>
+                                    <action selector="unicefLink:" destination="Q71-ln-YJn" eventType="touchUpInside" id="7jj-k2-Ve4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLp-I6-JMb">
+                                <rect key="frame" x="94" y="433" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Click here for more information">
+                                    <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="link:" destination="qr6-Uq-vsp" eventType="touchUpInside" id="q9Z-Ei-rIN"/>
+                                    <action selector="yaleLink:" destination="Q71-ln-YJn" eventType="touchUpInside" id="Njf-qP-NTn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EQY-Zc-Wrg"/>
                         <color key="backgroundColor" red="0.55686274509803924" green="0.60392156862745094" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="J3g-S3-JFf"/>
+                    <connections>
+                        <outlet property="deforestationPicOne" destination="Tyb-di-8Qj" id="lVR-yJ-NoV"/>
+                        <outlet property="deforestationPicTwo" destination="ccG-jQ-6TJ" id="fZD-xf-c1m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzr-HY-EDl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1642.0289855072465" y="-779.46428571428567"/>
         </scene>
-        <!--About Us-->
+        <!--AboutUs-->
         <scene sceneID="Mev-TP-SXr">
             <objects>
                 <viewController id="FkV-4s-73p" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xdu-UO-nMx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8a-A1-z1B">
-                                <rect key="frame" x="47" y="163" width="321" height="147"/>
+                                <rect key="frame" x="47" y="86" width="321" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Simple Education was an idea though up by co-founders Tiya Berry and Kelsey Moore during their time at the Kode with Klossy 2021 summer camp.</string>
@@ -246,7 +286,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dfc-AM-sCh">
-                                <rect key="frame" x="87" y="375" width="240" height="196"/>
+                                <rect key="frame" x="87" y="300" width="240" height="196"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">The app was created in an attempt to help people find information about the environment in an easy way without being overwhelmed with information.</string>
@@ -254,20 +294,24 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-07-22 at 12.00.30 PM" translatesAutoresizingMaskIntoConstraints="NO" id="u8F-B0-y1Y">
+                                <rect key="frame" x="67" y="546" width="281" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hQP-6T-4dt"/>
                         <color key="backgroundColor" red="0.55686274509803924" green="0.68627450980392157" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About Us" selectedImage="smiley" catalog="system" id="M8p-3A-6OQ"/>
+                    <tabBarItem key="tabBarItem" title="AboutUs" image="person.2" catalog="system" selectedImage="person.2" id="M8p-3A-6OQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjK-eu-zcW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="658" y="1201"/>
+            <point key="canvasLocation" x="657.97101449275362" y="1200.6696428571429"/>
         </scene>
-        <!--View Controller-->
+        <!--WildfiresVC-->
         <scene sceneID="pxN-uM-gaj">
             <objects>
-                <viewController id="bac-Dh-fbM" sceneMemberID="viewController">
+                <viewController id="bac-Dh-fbM" customClass="WildfiresVC" customModule="simpleEducation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="teI-Ta-pOY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -312,46 +356,76 @@
                                 <rect key="frame" x="53" y="514" width="309" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t73-be-GZp">
+                                <rect key="frame" x="90" y="63" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Click here for more information">
+                                    <color key="titleColor" red="0.2901961207" green="0.3058823645" blue="0.41176474089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="link:" destination="qr6-Uq-vsp" eventType="touchUpInside" id="ccQ-1J-SIH"/>
+                                    <action selector="wildfiresOne:" destination="bac-Dh-fbM" eventType="touchUpInside" id="3A8-Bk-59v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roM-kq-9rl">
+                                <rect key="frame" x="90" y="476" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Click here for more information">
+                                    <color key="titleColor" red="0.2901961207" green="0.3058823645" blue="0.41176474089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="link:" destination="qr6-Uq-vsp" eventType="touchUpInside" id="Wl6-Xe-Jav"/>
+                                    <action selector="wildfiresOne:" destination="bac-Dh-fbM" eventType="touchUpInside" id="HCO-bD-Dwz"/>
+                                    <action selector="wildfiresTwo:" destination="bac-Dh-fbM" eventType="touchUpInside" id="g1k-OA-AHn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LIq-Ng-eZq"/>
                         <color key="backgroundColor" red="0.99607843137254903" green="0.91764705882352937" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="HUM-Xy-XT0"/>
+                    <connections>
+                        <outlet property="wildfiresOne" destination="PjP-pJ-TK3" id="h5B-dM-0p7"/>
+                        <outlet property="wildfiresTwo" destination="keY-uo-OLp" id="iIV-fc-Ws6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJV-hr-LvA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2298.5507246376815" y="738.61607142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--PollutionVC-->
         <scene sceneID="zOu-ij-P2d">
             <objects>
-                <viewController id="vbp-xP-2yg" sceneMemberID="viewController">
+                <viewController id="vbp-xP-2yg" customClass="PollutionVC" customModule="simpleEducation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bFE-AF-Fcy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tvc-fT-Oew">
-                                <rect key="frame" x="87" y="151" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pollution3" translatesAutoresizingMaskIntoConstraints="NO" id="Tvc-fT-Oew">
+                                <rect key="frame" x="87" y="130" width="264" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yE-2i-dBB">
-                                <rect key="frame" x="20" y="309" width="374" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="What is causing pollution? Ocean litter, pesticides and fertilizers, air pollution, and noise and light pollution." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yE-2i-dBB">
+                                <rect key="frame" x="20" y="309" width="374" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPX-hB-yDQ">
-                                <rect key="frame" x="20" y="680" width="374" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPX-hB-yDQ">
+                                <rect key="frame" x="20" y="680" width="374" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Humans are also regularly harmed by pollution. Long-term exposure to air pollution, for example, can lead to chronic respiratory diesease, lung cancer and other diseases. In addition, toxic chemicals that accumulate in top predators can make some species unsafe to eat.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JqX-Np-CaJ">
-                                <rect key="frame" x="87" y="525" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pollution2" translatesAutoresizingMaskIntoConstraints="NO" id="JqX-Np-CaJ">
+                                <rect key="frame" x="58" y="517" width="302" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCc-Bd-lTv">
@@ -368,11 +442,36 @@
                                     <segue destination="zPX-D0-RPg" kind="show" id="Mbr-AB-CT2"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9D-4c-U4h">
+                                <rect key="frame" x="20" y="372" width="374" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">What are its impacts? Polluted water - causing 3.5 billion people to lack access to adequate water supplies. Acid rain- killing fish and disrupting ecosystems. Harmful algal blooms - slaying mutliple species of marine animals, concurrently derayling ecosystems. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h2-H5-mxV">
+                                <rect key="frame" x="92" y="75" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Click here for more information">
+                                    <color key="titleColor" red="0.2901961207" green="0.3058823645" blue="0.41176474089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="link:" destination="qr6-Uq-vsp" eventType="touchUpInside" id="esM-xm-1mN"/>
+                                    <action selector="pollution:" destination="vbp-xP-2yg" eventType="touchUpInside" id="lhH-1s-dRc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ist-Fd-ZBL"/>
                         <color key="backgroundColor" red="0.70980392156862748" green="0.51372549019607838" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="e6R-3M-elx"/>
+                    <connections>
+                        <outlet property="pollutionOne" destination="Tvc-fT-Oew" id="pLP-Pf-adU"/>
+                        <outlet property="pollutionTwo" destination="JqX-Np-CaJ" id="EbF-gu-i1l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SlU-RB-Uq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,14 +482,22 @@
             <objects>
                 <viewController id="fq4-00-gBy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HFp-wz-xW6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="We have provided a prompt meant to be emailed to your local state legislators urging for action in support of the environment." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCy-os-Tmc">
+                                <rect key="frame" x="20" y="69" width="367" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b9q-Ia-aOj">
-                                <rect key="frame" x="20" y="247" width="374" height="529"/>
+                                <rect key="frame" x="20" y="184" width="374" height="529"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Dear Senator/ Representative _______
+                                <string key="text">Dear Senator/ Representative _______
 
 I am writing today to urge action in support of the environment. This particular issue holds heavy on the younger generation, including myself. We’re left wondering about the fate of our planet.
 
@@ -403,17 +510,9 @@ I would be grateful for your prompt reply. Thank you for your time and attention
 Sincerely,
 (Insert Full Name)
 (Insert Grade Level)
-</mutableString>
+</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="We have provided a prompt meant to be emailed to your local state legislators urging for action in support of the environment." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCy-os-Tmc">
-                                <rect key="frame" x="20" y="117" width="367" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -448,16 +547,21 @@ Sincerely,
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kfo-zr-sNt"/>
+        <segue reference="PWa-23-Ra6"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Screen Shot 2021-07-22 at 12.00.30 PM" width="739" height="686"/>
         <image name="book" catalog="system" width="128" height="102"/>
         <image name="climate change" width="1440" height="720"/>
+        <image name="climatechange2" width="2000" height="1333"/>
+        <image name="climatechange3" width="1960" height="1228"/>
         <image name="deforestation" width="1241" height="633"/>
         <image name="deforestation " width="1260" height="709"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="pollution" width="825" height="463"/>
-        <image name="smiley" catalog="system" width="128" height="121"/>
+        <image name="pollution2" width="1000" height="600"/>
+        <image name="pollution3" width="995" height="625"/>
         <image name="unicef" width="1140" height="760"/>
         <image name="wildfires" width="1600" height="900"/>
         <image name="wildfires2" width="1200" height="800"/>

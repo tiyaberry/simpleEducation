@@ -17,6 +17,10 @@
 		A8AC7EFB26A73F12008C2F88 /* simpleEducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7EFA26A73F12008C2F88 /* simpleEducationUITests.swift */; };
 		A8AC7F0926A74B31008C2F88 /* UITabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7F0826A74B30008C2F88 /* UITabController.swift */; };
 		A8AC7F0B26A8A166008C2F88 /* ClimateChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7F0A26A8A166008C2F88 /* ClimateChangeVC.swift */; };
+		A8AC7F0D26A9B507008C2F88 /* DeforestationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7F0C26A9B507008C2F88 /* DeforestationVC.swift */; };
+		A8AC7F0F26A9B551008C2F88 /* WildfiresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7F0E26A9B551008C2F88 /* WildfiresVC.swift */; };
+		A8AC7F1126A9B55E008C2F88 /* PollutionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7F1026A9B55E008C2F88 /* PollutionVC.swift */; };
+		A8AC7F1326A9BAE6008C2F88 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AC7F1226A9BAE6008C2F88 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		A8AC7EFC26A73F12008C2F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8AC7F0826A74B30008C2F88 /* UITabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabController.swift; sourceTree = "<group>"; };
 		A8AC7F0A26A8A166008C2F88 /* ClimateChangeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateChangeVC.swift; sourceTree = "<group>"; };
+		A8AC7F0C26A9B507008C2F88 /* DeforestationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeforestationVC.swift; sourceTree = "<group>"; };
+		A8AC7F0E26A9B551008C2F88 /* WildfiresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildfiresVC.swift; sourceTree = "<group>"; };
+		A8AC7F1026A9B55E008C2F88 /* PollutionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutionVC.swift; sourceTree = "<group>"; };
+		A8AC7F1226A9BAE6008C2F88 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,10 @@
 				A8AC7EE626A73F12008C2F88 /* Info.plist */,
 				A8AC7EDE26A73F11008C2F88 /* simpleEducation.xcdatamodeld */,
 				A8AC7F0A26A8A166008C2F88 /* ClimateChangeVC.swift */,
+				A8AC7F0C26A9B507008C2F88 /* DeforestationVC.swift */,
+				A8AC7F0E26A9B551008C2F88 /* WildfiresVC.swift */,
+				A8AC7F1026A9B55E008C2F88 /* PollutionVC.swift */,
+				A8AC7F1226A9BAE6008C2F88 /* MainViewController.swift */,
 			);
 			path = simpleEducation;
 			sourceTree = "<group>";
@@ -265,9 +277,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8AC7ED626A73F11008C2F88 /* AppDelegate.swift in Sources */,
+				A8AC7F0F26A9B551008C2F88 /* WildfiresVC.swift in Sources */,
 				A8AC7F0926A74B31008C2F88 /* UITabController.swift in Sources */,
+				A8AC7F1126A9B55E008C2F88 /* PollutionVC.swift in Sources */,
 				A8AC7EE026A73F11008C2F88 /* simpleEducation.xcdatamodeld in Sources */,
 				A8AC7ED826A73F11008C2F88 /* SceneDelegate.swift in Sources */,
+				A8AC7F1326A9BAE6008C2F88 /* MainViewController.swift in Sources */,
+				A8AC7F0D26A9B507008C2F88 /* DeforestationVC.swift in Sources */,
 				A8AC7F0B26A8A166008C2F88 /* ClimateChangeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
